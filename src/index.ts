@@ -29,6 +29,10 @@ app.use("/api/v1/ai", aiRouter)
 
 // sample route with auth
 
+app.get("/", (req, res) => {
+  res.send("BE running...")
+})
+
 // public
 app.get("/test-1", (req, res) => {})
 
